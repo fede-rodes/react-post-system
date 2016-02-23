@@ -1,0 +1,14 @@
+App.controllers.Main
+   App.pages.Home (smart component)
+      App.views.mobile.Home (container component; it includes App.components.Header and App.components.Footer)
+      {App.components.<key>} (dumb presentational components that take in props and spit out HTML)
+
+
+
+1. 'Pages' are top-level components that are called by the router. They may or may
+not handle data.
+2. 'Views' are wrappers around components. They may or may not handle data.
+3. Containers are 'smart' components that handle data loading (subscribing and
+Minimongo calls) but don’t contain any HTML of their own.
+4. Components are “dumb” presentational components that take in props and spit
+out HTML. They may or may not be functional stateless components.
