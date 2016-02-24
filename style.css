@@ -1,0 +1,16 @@
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 16px;
+	font-weight: 300;
+	color: black;
+	font-family: 'Bowlby One SC', cursive;
+}
+
+.app-width {
+   max-width: 500px;
+}
+
+.app-bg-color {
+   background-color: white;
+}

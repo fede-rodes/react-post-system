@@ -8,8 +8,12 @@ App.layouts.Blank = React.createClass({
 
    render() {
       return (
-         <div>
-            <main>{this.props.content}</main>            
+         <div className="container app-width">
+            <div className="row app-bg-color">
+               <div className="col-xs-12">
+                  {this.props.children}                  
+               </div>
+            </div>
          </div>
       );
    }

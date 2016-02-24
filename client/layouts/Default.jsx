@@ -8,10 +8,14 @@ App.layouts.Default = React.createClass({
 
    render() {
       return (
-         <div>
-            <App.components.Header/>
-            <main>{this.props.content}</main>
-            <App.components.Footer/>
+         <div className="container app-width">
+            <div className="row app-bg-color">
+               <div className="col-xs-12">
+                  <App.components.Header/>
+                  <main>{this.props.children}</main>
+                  <App.components.Footer/>
+               </div>
+            </div>
          </div>
       );
    }

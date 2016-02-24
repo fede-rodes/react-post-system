@@ -6,7 +6,7 @@ need to add this tag by hand. Only head tag is required.
 FlowRouter.route('/', {
    name: 'home',
    action() {
-      ReactLayout.render(App.controllers.Main, {content: <App.pages.Home/>});
+      ReactLayout.render(App.controllers.Main, {content: <App.pages.CommentBox/>});
    }
 });
 /* NOT FOUND */

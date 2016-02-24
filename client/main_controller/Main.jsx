@@ -17,7 +17,7 @@ App.controllers.Main = React.createClass({
 
       // Global subsriptions
       var handles = [
-         //Meteor.subscribe('App.publications.<key>', argument), ...
+         Meteor.subscribe('App.publications.Comments')
       ];
 
       // All subsriptions must be ready
